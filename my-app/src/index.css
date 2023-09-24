@@ -1,0 +1,69 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: burlywood;
+    display: grid;
+    place-content: center;
+    background: linear-gradient(to bottom, #e7e7e7, #bec4e2);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+blockquote {
+    font-size: 1.3rem;
+}
+
+p {
+    text-align: right;
+    font-size: 1rem;
+    padding-bottom: 1rem;
+    font-family: system-ui, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+a:hover {
+    color: #3591fa;
+}
+
+i {
+    width: 100%;
+    height: 100%;
+}
+
+header h2 {
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+.quote-body {
+    width: 750px;
+    padding: 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.quote {
+    font-size: 1.8rem;
+    margin-inline: 1rem;
+}
+
+.buttons-container {
+    display: flex; justify-content: space-between;
+}
+
+.social-btn-container {
+    display: flex; 
+    gap: 1rem;
+}
