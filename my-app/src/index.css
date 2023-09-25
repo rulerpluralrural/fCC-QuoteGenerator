@@ -8,11 +8,10 @@
 
 body {
     height: 100vh;
-    background-color: burlywood;
     display: grid;
     place-content: center;
-    background: linear-gradient(to bottom, #e7e7e7, #bec4e2);
     font-family: 'Times New Roman', Times, serif;
+    transition: background-color 350ms ease-in;
 }
 
 blockquote {
@@ -26,13 +25,22 @@ p {
     font-family: system-ui, sans-serif;
 }
 
+button {
+    transition: ease-in 250ms;
+}
+
 a {
     text-decoration: none;
     color: aliceblue;
+    transition: ease-in 250ms;
 }
 
 a:hover {
     color: #3591fa;
+}
+
+blockquote {
+    display: flex;
 }
 
 i {
@@ -46,7 +54,6 @@ header h2 {
 }
 
 .quote-body {
-    width: 750px;
     padding: 1rem;
     text-align: center;
     display: flex;
@@ -54,9 +61,18 @@ header h2 {
     justify-content: space-around;
 }
 
+.quote-body h1 {
+    margin: 0;
+    padding: 1rem;
+}
+
 .quote {
     font-size: 1.8rem;
     margin-inline: 1rem;
+}
+
+.quote-right {
+    margin-top: auto;
 }
 
 .buttons-container {
@@ -66,4 +82,24 @@ header h2 {
 .social-btn-container {
     display: flex; 
     gap: 1rem;
+}
+
+#text {
+    word-wrap: break-word;
+    max-width: 500px;
+    animation: fade-in 500ms ease-in;
+    display: inline-block;
+}
+
+#author {
+    animation: fade-in 500ms ease-in;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
